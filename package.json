@@ -4,7 +4,6 @@
   "description": "",
   "dependencies": {
     "nodemon": "^1.18.4",
-    "stream-to-blob": "^1.0.1",
     "ws": "^6.0.0"
   },
   "devDependencies": {
