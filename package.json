@@ -1,0 +1,22 @@
+{
+  "name": "pgss",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^1.18.4",
+    "stream-to-blob": "^1.0.1",
+    "ws": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "server": "nodemon --watch lib lib/server.js",
+    "serveri": "nodemon --inspect --watch lib lib/server.js",
+    "client": "node node_modules/http-server/bin/http-server -c-1 -p 8081",
+    "lint": "eslint --fix lib/*.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
