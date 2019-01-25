@@ -4,17 +4,17 @@
   "description": "",
   "dependencies": {
     "nodemon": "^1.18.4",
-    "ws": "^6.0.0"
+    "ws": "^6.1.0"
   },
   "devDependencies": {
-    "eslint": "^5.5.0",
+    "eslint": "^5.12.1",
     "http-server": "^0.11.1"
   },
   "scripts": {
     "server": "nodemon --watch lib lib/server.js",
     "serveri": "nodemon --inspect --watch lib lib/server.js",
-    "client": "node node_modules/http-server/bin/http-server -c-1 -p 8081",
-    "lint": "eslint --fix lib/*.js"
+    "client": "npx http-server -c-1 -p 8081",
+    "lint": "npx eslint --fix lib/*.js"
   },
   "author": "",
   "license": "ISC"
